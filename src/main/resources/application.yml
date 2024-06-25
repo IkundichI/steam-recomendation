@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: demo
+  datasource:
+#    url: jdbc:postgresql://postgres0:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: password
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
